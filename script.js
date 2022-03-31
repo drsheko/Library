@@ -39,9 +39,16 @@ function createCard() {
     
         let card = document.createElement('div')
         let cardText = document.createElement('p')
+        let remove = document.createElement('button')
+        remove.textContent="Remove"
+
         cardContainer.appendChild(card)
         card.appendChild(cardText)
+        card.appendChild(remove)
        card.classList.add('.card')
+
+       remove.addEventListener('click', removeCard)
+
     
      cardText.textContent += myLibrary[myLibrary.length-1].title
 }
@@ -54,8 +61,9 @@ document.querySelector('.cancel').addEventListener('click',closeForm)
 document.querySelector('.newBook').addEventListener('click',openForm)
 
 function openForm(){
-    
+    document.form.reset()
     document.querySelector(".myForm").style.display="block"
+
     
 }
 
@@ -68,6 +76,7 @@ let requiredInputs = document.querySelectorAll("[required]");
 addBookBtn.disabled = true;
 
 for(let i = 0; i < requiredInputs.length; i++){
+   
 requiredInputs[i].addEventListener("input", buttonState)
 };
 
@@ -77,4 +86,8 @@ function buttonState() {
   } else {
     addBookBtn.disabled = false;
   }
+}
+
+function removeCard(){
+  this.parentElement.remove()
 }
