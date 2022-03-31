@@ -9,32 +9,37 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body >
+    <div class="title">Library</div>
     <div class="myForm" >
         <form action="" class="formAddBook" name="form">
-            <label for="bookTitle">Book title :</label>
-            <input type="text" class="bookTitle" required>
+            <fieldset>Add Book <br>
+                 <label for="bookTitle">Book title :</label><br>
+                 <input type="text" class="bookTitle" required><br>
 
-            <label for="author"> Author :</label>
-            <input type="text" class="author" required>
+                 <label for="author"> Author :</label><br>
+                 <input type="text" class="author" required><br>
 
-            <label for="pagesNumber">Number of pages:</label>
-            <input type="text" class="pagesNumber" required>
+                <label for="pagesNumber">Number of pages:</label><br>
+                <input type="text" class="pagesNumber" required><br>
 
-            <label for="read">Read status :</label>
-            <input type="text" class="read" required>
-            <button type="button" class="addBook" for="formAddBook">add book</button>
-            <button type="button " class="cancel">Cancel</button>
+                <label for="read">Read status :</label><br>
+                <input type="text" class="read" required><br>
+                <button type="button" class="addBook" for="formAddBook">add book</button>
+                <button type="button " class="cancel">Cancel</button>
+         </fieldset>
         </form>
     </div>
 
     <div >
         <p class="display"></p>
     </div>
-    <div class="cardContainer"></div>
-
-    <div>
+    <div class="newBookContainer">
         <button class="newBook">New Book</button>
     </div>
+    
+    <div class="cardContainer"></div>
+
+    
 
 
 </body>

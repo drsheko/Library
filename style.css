@@ -1,3 +1,78 @@
+body{
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color:#64748b;}
+
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin:30px 20px 30px;
+}
+    
+    
+    
+
+
+
+
 .myForm{
-    display: none;
+    background-color: #38bdf8;
+    height:70%;
+    width:40%;
+    margin:12px 220px ;
+    display:none;
+    
+}
+.formAddBook{
+
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding:10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+fieldset{
+    margin-bottom: 10px;
+}
+
+input{margin:3px 2px 5px;
+    
+}
+
+.remove{
+    background-color: green;
+}
+.newBookContainer{
+    text-align: center;
+    
+    margin:20px 20px ;
+}
+
+.newBook{
+    text-align: center;
+    background-color: #0284c7;
+    font: 24px bold white;
+    border:2px solid white;
+    border-radius: 5px;
+}
+.newBook:hover{
+    border:#0c4a6e;
+}
+
+.cardContainer{
+    margin: 20px 30px 20px;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(250px,1fr));
+    grid-template-rows: repeat(2,minmax(250px,1fr));
+    gap:10px 10px;
+
+}
+
+.card{
+    height: 150px;
+    width: 100px;
 }
